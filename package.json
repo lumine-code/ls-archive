@@ -1,7 +1,7 @@
 {
   "name": "@lumine-code/ls-archive",
   "description": "Lists and reads files inside archive files.",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "lumine-code",
   "keywords": [
