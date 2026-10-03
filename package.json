@@ -1,9 +1,9 @@
 {
   "name": "@lumine-code/ls-archive",
+  "author": "lumine-code",
   "description": "Lists and reads files inside archive files.",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "lumine-code",
   "keywords": [
     "archive",
     "zip",
@@ -14,13 +14,8 @@
     "uncompress",
     "bzip2"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lumine-code/node-ls-archive.git"
-  },
-  "bugs": {
-    "url": "https://github.com/lumine-code/node-ls-archive/issues"
-  },
+  "repository": "https://github.com/lumine-code/ls-archive",
+  "bugs": "https://github.com/lumine-code/ls-archive/issues",
   "engines": {
     "node": ">=24"
   },
