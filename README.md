@@ -2,6 +2,8 @@
 
 Lists and reads files inside archive files.
 
+Fork of [pulsar-edit/node-ls-archive](https://github.com/pulsar-edit/node-ls-archive).
+
 ## Features
 
 - **Multiple formats**: reads `.tar`, `.tar.gz`, `.tgz`, `.tar.bz2`, `.tbz`, `.tbz2`, and the `.zip` family (`.zip`, `.epub`, `.jar`, `.love`, `.war`, `.egg`, `.whl`, `.xpi`, `.nupkg`).
