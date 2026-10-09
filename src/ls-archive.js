@@ -297,27 +297,29 @@ function readEntry(entry, callback) {
 }
 
 function isTarPath(archivePath) {
-  return path.extname(archivePath) === ".tar";
+  return path.extname(archivePath).toLowerCase() === ".tar";
 }
 
 function isZipPath(archivePath) {
-  let ext = path.extname(archivePath);
+  let ext = path.extname(archivePath).toLowerCase();
   let exts = [".epub", ".jar", ".love", ".war", ".zip", ".egg", ".whl", ".xpi", ".nupkg"];
   return exts.includes(ext);
 }
 
 function isGzipPath(archivePath) {
+  const classificationPath = archivePath.toLowerCase();
   return (
-    path.extname(archivePath) === ".tgz" ||
-    path.extname(path.basename(archivePath, ".gz")) === ".tar"
+    path.extname(classificationPath) === ".tgz" ||
+    path.extname(path.basename(classificationPath, ".gz")) === ".tar"
   );
 }
 
 function isBzipPath(archivePath) {
+  const classificationPath = archivePath.toLowerCase();
   return (
-    path.extname(archivePath) === ".tbz" ||
-    path.extname(archivePath) === ".tbz2" ||
-    path.extname(path.basename(archivePath, ".bz2")) === ".tar"
+    path.extname(classificationPath) === ".tbz" ||
+    path.extname(classificationPath) === ".tbz2" ||
+    path.extname(path.basename(classificationPath, ".bz2")) === ".tar"
   );
 }
 
